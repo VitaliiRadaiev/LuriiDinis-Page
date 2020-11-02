@@ -574,6 +574,18 @@ textarea {
      object-fit: cover;
 }
 
+.gray-background {
+  background-color: rgba(216, 216, 216, 0.18);
+}
+
+.text-black {
+  color: #000000;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
 .semi-transparent-box {
   background-color: rgba(0, 23, 54, 0.81);
   padding: 15px 15px;
@@ -604,28 +616,21 @@ textarea {
   line-height: 1.1em;
 }
 
-.title-4.text-black {
-  color: #000000;
-}
-
-.title-4.text-white {
-  color: #ffffff;
-}
-
 .title-5 {
   font-family: "CloserLight", sans-serif;
   font-size: 18px;
   font-weight: 300;
-  letter-spacing: -0.23px;
+  letter-spacing: -0.0127em;
   line-height: 1.1em;
 }
 
-.title-5.text-black {
+.title-6 {
+  font-family: "CloserLight", sans-serif;
   color: #000000;
-}
-
-.title-5.text-white {
-  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.284em;
+  line-height: 1.1em;
 }
 
 .btn-default {
@@ -1163,10 +1168,6 @@ textarea {
 
 .form-send-email__submit-wrap .btn-default {
   color: #000;
-}
-
-.gray-background {
-  background-color: rgba(216, 216, 216, 0.18);
 }
 
 .products-block .swiper-container {
@@ -3347,7 +3348,7 @@ textarea.input {
   position: absolute;
   right: 0;
   bottom: 10px;
-  color: #fff;
+  color: #fff !important;
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
@@ -3426,7 +3427,7 @@ textarea.input {
 }
 
 .blog__post {
-  margin: 30px 0 48px;
+  margin: 30px 0 160px;
 }
 
 .blog__sign-up {
@@ -3661,6 +3662,12 @@ textarea.input {
   letter-spacing: -0.16px;
 }
 
+.post-blog__btn-leave-comment {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
 .comments {
   margin: 30px 0 30px;
   padding-right: 15px;
@@ -3844,6 +3851,72 @@ textarea.input {
   border-color: #6d7278;
 }
 
+.recent-posts .container-big {
+  position: relative;
+}
+
+.recent-posts__title {
+  position: absolute;
+  top: 68px;
+  left: 65px;
+}
+
+.recent-posts .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.recent-posts .swiper-slide {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.3333%;
+          flex: 0 0 33.3333%;
+  height: auto;
+}
+
+.post-card {
+  display: block;
+  color: #000;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  height: 100%;
+  padding: 110px 50px 110px;
+}
+
+.post-card__inner {
+  max-width: 366px;
+}
+
+.post-card__date {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: -0.16px;
+  margin-bottom: 10px;
+}
+
+.post-card__author {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: -0.16px;
+  margin-bottom: 10px;
+}
+
+.post-card__text {
+  color: #000000;
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: -0.0130em;
+  line-height: 1.1em;
+}
+
 .contact__email-form {
   padding: 225px 0 200px;
 }
@@ -3955,6 +4028,7 @@ textarea.input {
 
   .header-book-fragment__btn-slide-down:hover {
     background: rgba(255, 255, 255, 0.2);
+    text-decoration: none !important;
   }
 
   .header-blog__link:hover {
@@ -3967,6 +4041,10 @@ textarea.input {
 
   .form-comment__cancel:hover {
     background: rgba(0, 0, 0, 0.1);
+  }
+
+  .post-card:hover {
+    background: rgba(0, 0, 0, 0.05);
   }
 }
 
@@ -4078,6 +4156,19 @@ textarea.input {
 
   .post-blog__text-wrap {
     max-width: none;
+  }
+
+  .recent-posts__title {
+    top: 30px;
+    left: 20px;
+  }
+
+  .post-card {
+    padding: 80px 40px 80px;
+  }
+
+  .post-card__text {
+    font-size: 18px;
   }
 }
 
@@ -4317,6 +4408,10 @@ textarea.input {
     margin: 70px 0 70px;
   }
 
+  .blog__post {
+    margin-bottom: 70px;
+  }
+
   .blog__sign-up {
     margin-bottom: 70px;
   }
@@ -4351,6 +4446,26 @@ textarea.input {
 
   .form-comment__btn-wrap > button {
     font-size: 12px;
+  }
+
+  .recent-posts .swiper-wrapper {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  .recent-posts .swiper-slide {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: auto;
+  }
+
+  .recent-posts .swiper-slide .post-card {
+    width: 280px;
+  }
+
+  .post-card {
+    padding: 80px 20px 80px;
   }
 
   .contact__email-form {

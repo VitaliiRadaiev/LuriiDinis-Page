@@ -143,28 +143,6 @@
 											</span>
 												Reply
 										</button>
-										<form action="/" class="comments__form form-comment">
-											<div class="form-comment__item">
-												<label for="name" class="form-comment__label">Name*</label>
-												<input class="form-comment__input" id="name" type="text" required>
-											</div>
-											<div class="form-comment__item">
-												<label for="comment" class="form-comment__label">Write a comment* </label>
-												<textarea name="comment" id="comment" class="form-comment__textarea"></textarea>
-												<p>
-													Required fields are marked
-												</p>
-											</div>
-											<div class="form-comment__btn-wrap">
-												<button class="form-comment__submit btn-default" type="submit">
-													<span>
-														<img src="img/icons/load.svg" alt="icon">
-													</span>
-													POST COMMENT
-												</button>
-												<button class="form-comment__cancel btn-default">CANCEL</button>
-											</div>
-										</form>
 
 										<form action="/" class="comments__form form-comment">
 											<div class="form-comment__item">
@@ -173,7 +151,7 @@
 											</div>
 											<div class="form-comment__item">
 												<label for="comment" class="form-comment__label">Write a comment* </label>
-												<textarea name="comment" id="comment" class="form-comment__textarea"></textarea>
+												<textarea name="comment" id="comment" class="form-comment__textarea" required></textarea>
 												<p>
 													Required fields are marked
 												</p>
@@ -211,7 +189,7 @@
 													</div>
 													<div class="form-comment__item">
 														<label for="comment" class="form-comment__label">Write a comment* </label>
-														<textarea name="comment" id="comment" class="form-comment__textarea"></textarea>
+														<textarea name="comment" id="comment" class="form-comment__textarea" required></textarea>
 														<p>
 															Required fields are marked
 														</p>
@@ -248,7 +226,7 @@
 													</div>
 													<div class="form-comment__item">
 														<label for="comment" class="form-comment__label">Write a comment* </label>
-														<textarea name="comment" id="comment" class="form-comment__textarea"></textarea>
+														<textarea name="comment" id="comment" class="form-comment__textarea" required></textarea>
 														<p>
 															Required fields are marked
 														</p>
@@ -287,7 +265,7 @@
 											</div>
 											<div class="form-comment__item">
 												<label for="comment" class="form-comment__label">Write a comment* </label>
-												<textarea name="comment" id="comment" class="form-comment__textarea"></textarea>
+												<textarea name="comment" id="comment" class="form-comment__textarea" required></textarea>
 												<p>
 													Required fields are marked
 												</p>
@@ -311,7 +289,7 @@
 									</div>
 									<div class="form-comment__item">
 										<label for="comment" class="form-comment__label">Write a comment* </label>
-										<textarea name="comment" id="comment" class="form-comment__textarea"></textarea>
+										<textarea name="comment" id="comment" class="form-comment__textarea" required></textarea>
 										<p>
 											Required fields are marked
 										</p>
@@ -334,6 +312,45 @@
 								</button>
 							</div>
 						</div>
+				</section>
+				<section class="blog__recent-post recent-posts gray-background">
+					<div class="container-big">
+						<h6 class="recent-posts__title title-6">Recent Blog Posts</h6>
+						<div class="swiper-container" data-mobile="false">
+						    <div class="swiper-wrapper">
+
+						        <div class="swiper-slide">
+						        	<a href="#" class="post-card">
+						        		<div class="post-card__inner">
+						        			<div class="post-card__date">09.22.2020</div>
+						        			<div class="post-card__author">Author</div>
+						        			<div class="post-card__text">The first story of “The Spacy Bunch”</div>
+						        		</div>
+						        	</a>
+						        </div>
+						        <div class="swiper-slide">
+						        	<a href="#" class="post-card">
+						        		<div class="post-card__inner">
+						        			<div class="post-card__date">09.22.2020</div>
+						        			<div class="post-card__author">Author</div>
+						        			<div class="post-card__text">The second story of “The Spacy Bunch” serie. Mighty knights, save the Lady! </div>
+						        		</div>
+						        	</a>
+						        </div>
+						        <div class="swiper-slide">
+						        	<a href="#" class="post-card">
+						        		<div class="post-card__inner">
+						        			<div class="post-card__date">09.22.2020</div>
+						        			<div class="post-card__author">Author</div>
+						        			<div class="post-card__text">The third story of “The Spacy Bunch” serie. </div>
+						        		</div>
+						        	</a>
+						        </div>
+						        
+						    </div>
+						    <div class="swiper-pagination"></div>
+						</div>        	
+					</div>
 				</section>
 				<section class="blog__sign-up">
 					<div class="container">
